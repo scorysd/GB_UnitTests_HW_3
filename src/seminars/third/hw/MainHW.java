@@ -8,11 +8,11 @@ public class MainHW {
     // HW 3.2. Нужно написать метод который проверяет, попадает ли переданное число в интервал (25;100) и возвращает true, если попадает и false - если нет,
     // покрыть тестами метод на 100%
     public static void main(String[] args) {
-        System.out.println(evenOddNumber(2));
-        System.out.println(evenOddNumber(3));
-        System.out.println(evenOddNumber(6));
-        System.out.println(evenOddNumber(26));
-        System.out.println(evenOddNumber(3434));
+//        System.out.println(evenOddNumber(2));
+//        System.out.println(evenOddNumber(3));
+//        System.out.println(evenOddNumber(6));
+//        System.out.println(evenOddNumber(26));
+//        System.out.println(evenOddNumber(3434));
 
     }
 

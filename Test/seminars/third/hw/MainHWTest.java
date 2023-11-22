@@ -5,19 +5,24 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MainHWTest {
+    public static MainHW mh;
 
     @BeforeEach
     void setUp() {
+        MainHW mh = new MainHW();
     }
 
     @AfterEach
     void tearDown() {
+        mh = null;
     }
 
     @Test
     @DisplayName("тест правильного подчета")
     void evenOddNumberTest() {
-        assertTrue(4 % 2 == 0);
+        Assertions.assertTrue(this.mh.evenOddNumber(2));
+        Assertions.assertFalse(this.mh.evenOddNumber(3));
+
     }
 
     @Test
@@ -32,11 +37,9 @@ class MainHWTest {
         Assertions.assertInstanceOf(Integer.class, 25);
     }
     @Test
-    void numberInIntervalLower(){
-        assertTrue(24<25);
-    }
-    @Test
-    void numberInIntervalHigher(){
-        assertTrue(101>100);
+    void numberInIntervaTest(){
+        Assertions.assertTrue(this.mh.numberInInterval(26));
+        Assertions.assertFalse(this.mh.numberInInterval(2));
+
     }
 }
